@@ -36,7 +36,7 @@
 					<p></p>
 					<p></p>
 					<h2>What is a queue?</h2>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Mm1_queue.svg" align="right" alt="Diagram of a single server queue"/>
+					<img src="https://github.com/TheBeggs/beggs.io/blob/master/docs/assets/img/queue.png?raw=true" align="right" alt="Diagram of a single server queue"/>
 
 					<p>This is best answered by looking at a single server queue.<br />
 						Arrivals occur at rate λ, which is determined from a Poisson probability distribution model. This means that we can predict the number of arrivals since they don’t affect each others chance of happening.<br />
@@ -44,7 +44,7 @@
 						Here the buffer is of infinite size, so there is no limit on the number of customers it can contain. This would not be possible in practice.</p>
 
 					<h2>What is a queue network?</h2>
-					<img src="/home/andrew/Pictures/phdSite/LayeredQueue.png" align="right" alt="Diagram of a layered queue network" style="width: 25%;"/>
+					<img src="https://github.com/TheBeggs/beggs.io/blob/master/docs/assets/img/LayeredQueue.png?raw=true" align="right" alt="Diagram of a layered queue network" style="width: 25%;"/>
 
 					<p>A queue network is simply a number of single queues chained together with a logical network. This could be visualised as different hierarchies of a server farm, starting with rows of server racks, then to a single rack, and finally a single server that is delegated the task. This would form a tree of queues as the network, but many different arrangements are possible.<br />
 						The arrangement we will be focusing on is called a layered queue network. Layered queue networks   are a queueing network model where the service time for each job at each node is given by the response time of a queueing network as a whole. Resources can be nested and queues form along the nodes of the nesting structure. The nesting structure is why this model is ‘layered’.
