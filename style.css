@@ -12,6 +12,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body section.pageBeggs1{
+  background: #c0edff;
+  padding: 0;
+  text-align: left;
+  font-family: 'open sans';
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+
 .wrapper {
   height: 100% !important;
   height: 100%;
@@ -103,6 +115,21 @@ code.js {
   -moz-box-sizing: border-box;
   font-weight: 100;
   color: white;
+  margin: 0;
+}
+
+.main section.pageBeggs1 h1 {
+  padding:0px;
+  padding-bottom: 20px;
+  text-align: center;
+  float: left;
+  width: 100%;
+  font-size: 45px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-weight: 100;
+  color: black;
   margin: 0;
 }
 
@@ -217,6 +244,15 @@ header {
   max-width: 950px;
   z-index: 3;
 }
+
+.main section.pageBeggs1 .page_container {
+  position: relative;
+  top: 5%;
+  margin: 0 auto 0;
+  max-width: 80%;
+  z-index: 3;
+}
+
 .main section  {
   overflow: hidden;
 }

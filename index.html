@@ -32,8 +32,32 @@
 
 	    <section class="pageBeggs1">
 	      <div class="page_container">
+					<h1>Queuing Theory</h1>
+					<p></p>
+					<p></p>
+					<h2>What is a queue?</h2>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Mm1_queue.svg" align="right" alt="Diagram of a single server queue"/>
+
+					<p>This is best answered by looking at a single server queue.<br />
+						Arrivals occur at rate λ, which is determined from a Poisson probability distribution model. This means that we can predict the number of arrivals since they don’t affect each others chance of happening.<br />
+						A single server queue will process each customer one-by-one on a first come, first served basis. When the service is complete the customer leaves the queue and the number of customers in the system reduces by one.<br />This is done at a mean rate of μ.<br />
+						Here the buffer is of infinite size, so there is no limit on the number of customers it can contain. This would not be possible in practice.</p>
+
+					<h2>What is a queue network?</h2>
+					<img src="/home/andrew/Pictures/phdSite/LayeredQueue.png" align="right" alt="Diagram of a layered queue network" style="width: 25%;"/>
+
+					<p>A queue network is simply a number of single queues chained together with a logical network. This could be visualised as different hierarchies of a server farm, starting with rows of server racks, then to a single rack, and finally a single server that is delegated the task. This would form a tree of queues as the network, but many different arrangements are possible.<br />
+						The arrangement we will be focusing on is called a layered queue network. Layered queue networks   are a queueing network model where the service time for each job at each node is given by the response time of a queueing network as a whole. Resources can be nested and queues form along the nodes of the nesting structure. The nesting structure is why this model is ‘layered’.
+					</p>
+					<h2>How does this help?</h2>
+					<p>
+						The state of the queue network can be examined and based on the results resources can either be added vertically (from the same machine) or horizontally (from a different machine).<br />
+						A simple way of thinking about this is that if a certain queue’s waiting area occupation is above a threshold value and the machine it is serving is at a high utilisation, then it can be determined that it would be suitable to assign resources horizontally. This would allow the backlog of jobs in the waiting area to be processed quickly, while also accommodating the possibility of a traffic surge – which be more likely to occur with a general increase in traffic.<br />
+						This is the traditional approach that is currently ineffective to surges. My research is to instead use the whole network within calculations instead of each  node operating independently. Therefore increasing efficiency by allowing an entire data centre to coordinate itself.<br />
+					</p>
 				</div>
       </section>
+
 
     </div>
   </div>
