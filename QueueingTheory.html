@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Alim Ul Gias</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body><nav class="navbar navbar-light navbar-expand-md">
+    <div class="container-fluid"><a href="http://wp.doc.ic.ac.uk/gcasale/person/alim-ul-gias/" class="navbar-brand">Alim Ul Gias</a><button data-toggle="collapse" data-target="#navcol-2" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div
+            class="collapse navbar-collapse" id="navcol-2">
+            <ul class="nav navbar-nav">
+                <li role="presentation" class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li role="presentation" class="nav-item"><a href="Microservices.html" class="nav-link">Microservices</a></li>
+                <li role="presentation" class="nav-item"><a href="TrafficandResources.html" class="nav-link">Traffic Surges and Resource Allocation</a></li>
+                <li role="presentation" class="nav-item"><a href="CurrentShortcomings.html" class="nav-link">Current Shortcomings</a></li>
+                <li role="presentation" class="nav-item"><a href="QueueingTheory.html" class="nav-link">Queueing Theory</a></li>
+            </ul>
+    </div>
+        <a href="mailto: a.gias17@ic.ac.uk" class="navbar-brand">Email: a.gias17@ic.ac.uk</a>
+    </div>
+</nav>
+    <header class="masthead text-white text-center" style="background: url('assets/img/bg-masthead.jpg')no-repeat center center;background-size: cover;background-image: url(&quot;https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260&quot;);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5"><br><br>Queues and Queuing Theory<br></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section style="margin-top: 100px;">
+        <div class="container" style="padding-bottom: 10%;">
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-6 col-xl-9">
+                    <h2 class="text-center">What Is A Queue?<br></h2><p class="text-left">In the context of servers and requests, this is best answered by looking at the single server queue <a href="#1">[1]</a>.<br />A noteworthy aspect is represented by the arrivals, which occur at rate λ. This is determined from a Poisson probability distribution model.
+    It means that we can accurately predict the number of arrivals, since none affect the chance the others have of happening.<br />A single server queue will process each customer one-by-one on a first come, first served basis. When the service is complete
+    the customer leaves the queue and the number of customers in the system reduces by one.<br />This is done at a mean rate of μ.<br />Here the buffer that holds the arrivals in waiting is of infinite size, so there is no limit on the number of customers
+    it can contain. This would not be possible in a practical scenario, however.<br /></p></div>
+                <div class="col-md-6 col-xl-3 text-center align-self-center"><a href="https://commons.wikimedia.org/wiki/File:Mm1_queue.svg"><img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Mm1_queue.svg/1920px-Mm1_queue.svg.png" alt="Diagram of a single server queue" style="padding-bottom: 5px;"></a>
+                    <p>Single Server Queue</p>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-6 col-xl-3 text-center align-self-center"><img class="img-fluid" src="https://github.com/TheBeggs/beggs.io/blob/master/docs/assets/img/LayeredQueue.png?raw=true" alt="Diagram of a layered queue network" style="padding-bottom: 5px;padding-top: 10px;">
+                    <p>Layered Queue Network</p>
+                </div>
+                <div class="col-md-6 col-xl-9">
+                    <h2 class="text-center">What Is A Queue Network?<br></h2><p>A queueing network is simply several single server queues chained together with a logical network <a href="#2">[2]</a>. This could be visualised as different desks in a bank. A customer can pick one of them to wait in line for, and they work together to help everyone
+    that requires assistance. There are many different arrangements of the desks and the way in which customers are divided among them and each such arrangement of queues forms a network.<br />The one we will be focusing on is a layered queue network.
+    In such an arrangement, a component can be modelled as both client and server. This fact stems from the way a layered queuing network manages and completes requests. Each one is executed through a series of further requests to both other servers and
+    for services to the host. This nesting element, of queuing at other servers, is where the core of a layered queue network lies. This is especially important for microservices, because a microservice can serve a client request as well as a service
+    request from another microservice <a href="#3">[3]</a>.<br /></p></div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-8 col-lg-8 col-xl-10 offset-md-2 offset-lg-2 offset-xl-1">
+                    <h2 class="text-center">How Does This Help?<br></h2>
+                    <p>Using this kind of analytical modelling approach, we can better decide how and when to distribute resources to the servers. The state of the queue network can be examined and, based on the results, resources can either be added vertically
+                        (increasing the capacity of existing hardware of software) or horizontally (adding more hardware or software).<br>Let’s try to apply the commonly found rules-based approach, outlined above, to our view of the servers as a queue
+                        network. We could imagine a situation where, if a certain queue’s waiting area is above a threshold value and the machine handling it is at a high utilisation, then resources might be allocated horizontally. This would allow the
+                        backlog of jobs in the waiting area to be processed more quickly, while also accommodating the possibility of a traffic surge – which will be more likely to occur with a general increase in traffic.&nbsp;<br>But would this truly
+                        be adaptable enough? As mentioned before, this is the traditional approach that is currently used, and it has a major weakness. It might seem that the system will be able to handle traffic surges, but we should keep in mind that
+                        resources are added linearly, “as the need arises”. If, however, for a certain workload a very large increase in processing power is required, by<br>the time this approach reaches a stable situation, many of the users might have
+                        timed out and many of the requests might have been<br>fulfilled so having all those resources is now redundant.<br>Instead, we can use mathematical models and queue theory for better results. Utilizing analytical models will be
+                        much faster than machine learning and, as a result, we can analyse multiple resource allocation patterns. The system will take into account the total amount of resources and the different effects of horizontal and vertical resource
+                        allocation for particular traffic surges. It will thus be<br>capable to make accurate decisions not only about the amount of resources required, but also about the way in which they should be<br>allocated. Taking this approach
+                        will prove to have considerable benefits, allowing us, after the above have been calculated, to pick<br>out the best resource allocation pattern and use it as the scaling configuration. <br></p>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-12 col-lg-10 col-xl-12 offset-lg-1 offset-xl-0">
+                    <h3 class="text-center">References<br></h3><a href="#" name="1"></a>
+                    <p>[1] Sturgul&nbsp;J R. 2000. Mine design: examples using simulation, Chapter VI<br></p><a href="#" name="2"></a>
+                    <p>[2]&nbsp;Franks G, Al-Omari T, Woodside M, Das O, Derisavi S. 2009. Enhanced Modelling and Solution of Layered Queueing Networks<br></p><a href="#" name="3"></a>
+                    <p>[3]&nbsp;Murray Woodside, Carleton University 2013, Tutorial Introduction to Layered Modeling of Software Performance<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+</body>
+
+</html>

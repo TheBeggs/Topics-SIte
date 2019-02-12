@@ -1,75 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Alim Ul Gias</title>
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="onepagescroll.js"></script>
-  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
-	<link href='style.css' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Alim Ul Gias</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
-<body>
 
-    <div class="wrapper">
-	  <div class="main">
-
-      <section class="page1">
-        <div class="page_container">
-				</div>
-      </section>
-
-	    <section class="page2">
-	      <div class="page_container">
-				</div>
-      </section>
-
-	    <section class="page3">
-	      <div class="page_container">
-				</div>
-      </section>
-
-	    <section class="pageBeggs1">
-	      <div class="page_container">
-					<h1>Queuing Theory</h1>
-					<p></p>
-					<p></p>
-					<h2>What is a queue?</h2>
-					<img src="https://github.com/TheBeggs/beggs.io/blob/master/docs/assets/img/queue.png?raw=true" align="right" alt="Diagram of a single server queue"/>
-
-					<p>This is best answered by looking at a single server queue.<br />
-						Arrivals occur at rate λ, which is determined from a Poisson probability distribution model. This means that we can predict the number of arrivals since they don’t affect each others chance of happening.<br />
-						A single server queue will process each customer one-by-one on a first come, first served basis. When the service is complete the customer leaves the queue and the number of customers in the system reduces by one.<br />This is done at a mean rate of μ.<br />
-						Here the buffer is of infinite size, so there is no limit on the number of customers it can contain. This would not be possible in practice.</p>
-
-					<h2>What is a queue network?</h2>
-					<img src="https://github.com/TheBeggs/beggs.io/blob/master/docs/assets/img/LayeredQueue.png?raw=true" align="right" alt="Diagram of a layered queue network" style="width: 25%;"/>
-
-					<p>A queue network is simply a number of single queues chained together with a logical network. This could be visualised as different hierarchies of a server farm, starting with rows of server racks, then to a single rack, and finally a single server that is delegated the task. This would form a tree of queues as the network, but many different arrangements are possible.<br />
-						The arrangement we will be focusing on is called a layered queue network. Layered queue networks   are a queueing network model where the service time for each job at each node is given by the response time of a queueing network as a whole. Resources can be nested and queues form along the nodes of the nesting structure. The nesting structure is why this model is ‘layered’.
-					</p>
-					<h2>How does this help?</h2>
-					<p>
-						<br />
-						<br />
-						The state of the queue network can be examined and based on the results resources can either be added vertically (from the same machine) or horizontally (from a different machine).<br />
-						A simple way of thinking about this is that if a certain queue’s waiting area occupation is above a threshold value and the machine it is serving is at a high utilisation, then it can be determined that it would be suitable to assign resources horizontally. This would allow the backlog of jobs in the waiting area to be processed quickly, while also accommodating the possibility of a traffic surge – which be more likely to occur with a general increase in traffic.<br />
-						This is the traditional approach that is currently ineffective to surges. My research is to instead use the whole network within calculations instead of each  node operating independently. Therefore increasing efficiency by allowing an entire data centre to coordinate itself.<br />
-					</p>
-				</div>
-      </section>
-
-
+<body><nav class="navbar navbar-light navbar-expand-md">
+    <div class="container-fluid"><a href="http://wp.doc.ic.ac.uk/gcasale/person/alim-ul-gias/" class="navbar-brand">Alim Ul Gias</a><button data-toggle="collapse" data-target="#navcol-2" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div
+            class="collapse navbar-collapse" id="navcol-2">
+            <ul class="nav navbar-nav">
+                <li role="presentation" class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li role="presentation" class="nav-item"><a href="Microservices.html" class="nav-link">Microservices</a></li>
+                <li role="presentation" class="nav-item"><a href="TrafficandResources.html" class="nav-link">Traffic Surges and Resource Allocation</a></li>
+                <li role="presentation" class="nav-item"><a href="CurrentShortcomings.html" class="nav-link">Current Shortcomings</a></li>
+                <li role="presentation" class="nav-item"><a href="QueueingTheory.html" class="nav-link">Queueing Theory</a></li>
+            </ul>
     </div>
-  </div>
-  <script>
-	 onePageScroll(".main", {
-     sectionContainer: "section",
-     loop: true,
-     responsiveFallback: false
-   });
-
-	</script>
+        <a href="mailto: a.gias17@ic.ac.uk" class="navbar-brand">Email: a.gias17@ic.ac.uk</a>
+    </div>
+</nav>
+    <header class="masthead text-white text-center" style="background: url('assets/img/bg-masthead.jpg')no-repeat center center;background-size: cover;background-image: url(&quot;https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260&quot;);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5">Performance and Reliability Analysis of Microservices</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="features-icons bg-light text-center" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><a href="Microservices.html"><i class="fas fa-cloud m-auto text-primary" data-bs-hover-animate="bounce" style="padding: 20px 91.5px;"></i></a></div>
+                        <h3>Microservices</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><a href="TrafficandResources.html"><i class="fa fa-line-chart m-auto text-primary" data-bs-hover-animate="bounce" style="padding: 20px 91.5px;"></i></a></div>
+                        <h3>Traffic Surges and&nbsp;<strong>Resource Allocation</strong></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><a href="CurrentShortcomings.html"><i class="fa fa-gears m-auto text-primary" data-bs-hover-animate="bounce" style="padding: 20px 91.5px;"></i></a></div>
+                        <h3>Current Industry Shortcomings</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><a href="QueueingTheory.html"><i class="material-icons m-auto text-primary" data-bs-hover-animate="bounce" style="padding: 20px 91.5px;">format_list_numbered</i></a></div>
+                        <h3>Queueing Theory</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials text-center bg-light" style="padding-top: 10px;">
+        <div class="container"><h2 class="mb-5"><a href="http://wp.doc.ic.ac.uk/gcasale/person/alim-ul-gias/">Alim Ul Gias</a></h2>
+            <div class="row">
+                <div class="col-lg-10 col-xl-6 offset-lg-1 offset-xl-3"><img class="rounded-circle img-fluid mb-3" src="http://wp.doc.ic.ac.uk/gcasale/wp-content/uploads/sites/9/2018/10/alim-120x160.jpg">
+                    <h5>Short Bio.</h5>
+                    <p>Alim is currently doing his PhD. at Imperial College London, under the supervision of Dr. Giuliano Casale. He completed M.Sc. in Software Engineering from Institute of Information<br>Technology (IIT),&nbsp;<a href="http://www.du.ac.bd/">University of Dhaka (DU)</a>,
+                        with thesis on Adaptive Software Performance Testing. He received his bachelor’s degree in Information Technology (major in software engineering) from the same institute.His current research focuses on software performance engineering
+                        using stochastic process modeling and machine learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
 </body>
+
 </html>

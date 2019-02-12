@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Alim Ul Gias</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body><nav class="navbar navbar-light navbar-expand-md">
+    <div class="container-fluid"><a href="http://wp.doc.ic.ac.uk/gcasale/person/alim-ul-gias/" class="navbar-brand">Alim Ul Gias</a><button data-toggle="collapse" data-target="#navcol-2" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div
+            class="collapse navbar-collapse" id="navcol-2">
+            <ul class="nav navbar-nav">
+                <li role="presentation" class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li role="presentation" class="nav-item"><a href="Microservices.html" class="nav-link">Microservices</a></li>
+                <li role="presentation" class="nav-item"><a href="TrafficandResources.html" class="nav-link">Traffic Surges and Resource Allocation</a></li>
+                <li role="presentation" class="nav-item"><a href="CurrentShortcomings.html" class="nav-link">Current Shortcomings</a></li>
+                <li role="presentation" class="nav-item"><a href="QueueingTheory.html" class="nav-link">Queueing Theory</a></li>
+            </ul>
+    </div>
+        <a href="mailto: a.gias17@ic.ac.uk" class="navbar-brand">Email: a.gias17@ic.ac.uk</a>
+    </div>
+</nav>
+    <header class="masthead text-white text-center" style="background: url('assets/img/bg-masthead.jpg')no-repeat center center;background-size: cover;background-image: url(&quot;https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260&quot;);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5">Traffic Surges and Resource Allocation</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section style="margin-top: 100px;">
+        <div class="container" style="padding-bottom: 10%;">
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-8 col-lg-8 col-xl-10 offset-md-2 offset-lg-2 offset-xl-1">
+                    <h2 class="text-center">Frustrating Experiences<br></h2>
+                    <p class="text-left">On the topic of high demand, we have all encountered website slowness or sudden downtime in our browsing experience, at one point or another, and no matter the situation, this leads to frustration and poor user<br>satisfaction. These
+                        issues are most noticeable on shopping websites before Christmas, when we try to book tickets for a flight on short notice or when a game has a lot of concurrent players. They are oftentimes caused by sudden spikes in the number
+                        of people attempting to access some content or page. These are called traffic surges, and are a concern for consumers and businesses alike.<br></p>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-8 col-lg-8 col-xl-10 offset-md-2 offset-lg-2 offset-xl-1">
+                    <h2 class="text-center">How Do Traffic Spikes Affect Us?<br></h2><p>Such spikes and their consequences are analogous to sudden increases in the number of customers at a restaurant <a href="#1">[1]</a>. A manager of a locale might know that Thursday afternoon is a quiet time with few customers and might keep a reduced crew during that
+    period.<br />However, on one occasion, a convention takes place in the area and, after finishing, the hungry convention goers pour into the restaurant, which is unprepared to deal with the load. The small team scrambles to seat people, shuffle menus,
+    make and deliver the food and barely scrapes by. <br />From the customer’s point of view, they had to wait a long period of time just to be served undercooked food by stressed and unenthusiastic staff. While this large bump in customers will have
+    increased the revenue in the short term, the unsatisfied customers are sure not to return and advise their friends and family against coming here. This is very similar to what might happen to a website when an unexpected influx of users manifests:
+    there are a lot of data requests being made, with the server scrambling to answer them all, which leads to slowdowns, interruptions of service and unhappy people.<br /></p></div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-8 col-lg-8 col-xl-10 offset-md-2 offset-lg-2 offset-xl-1">
+                    <h2 class="text-center">How Do They Affect Businesses?<br></h2><p>Unlike a local restaurant, however, servers have to deal with many more requests at once and have to provide an answer in seconds. This means that the stakes are higher, especially for popular websites. Due to the large scale that some services operate
+    with, simply keeping “plenty of staff” on hand is not a sustainable business practice. Costs have to be taken into account and considering that server farms have been found to utilize over 1.5% of the total electricity in the United States <a href="#2">[2]</a>, it
+    is critical for the long-term health of business that make heavy use of web services to strike the right balance between consumer experience and cost efficiency.<br /></p></div>
+            </div>
+            <div class="row" style="padding-bottom: 30px;">
+                <div class="col-md-8 col-lg-8 col-xl-10 offset-md-2 offset-lg-2 offset-xl-1">
+                    <h2 class="text-center">Solutions and Compromises<br></h2><p class="text-left">To that end, resources are usually managed internally by an auto-scaler which is designed to keep costs low during quiet periods, by limiting waste, and to quickly react in case of surges, increasing the ability of the website or service to cope with
+    the demand. From the perspective of resource estimation and management, auto-scalers can be divided into six categories <a href="#3">[3]</a>:<br />1.<br /> Rule-based approaches – are the most common and easiest to implement. They are often used as a benchmark, due
+    to their frequent<br />use and practicality, but suffer from a lack of adaptability and requirement for expert knowledge of the system in order to handcraft<br />the rules.<br />2.<br /> Fuzzy inference – can be considered as an advanced type of rule-based
+    auto-scaler which allows for use of linguistic terms such<br />as “low” or “high”, but on its own struggles to cope with environmental and application changes.<br />3.<br /> Application profiling – which tests the saturation point of a real or synthetic
+    workload, accurately acquiring the information for<br />the minimum necessary amount of resources. The downsides are that in its offline form it needs to have the profile reconducted manually with every update, while its online form is forced to sacrifice
+    granularity in its profiling.<br />4.<br /> Machine learning – has the advantage that it dynamically adapts to the environment and it is robust to changes, making it very<br />flexible, but it takes such approaches a long time to converge onto a stable
+    model, time during which it performs poorly.<br />5.<br /> Analytical modelling – is based on constructing mathematical models, the predominant kind in auto-scaling being based on queuing<br />theory. There are multiple approaches, each of which customized
+    for different circumstances. However, a potential issue that this method might run into is the difficulty of obtaining certain parameters which are hard to measure directly.<br />6.<br /> Hybrid approaches – are, as the name suggests, combinations
+    of the above meant to complement strengths and weaknesses in order to achieve better results. Some examples would be rule-based approaches where the rules are dynamically generated by learning techniques and analytical queuing models that estimate
+    concealed metrics with machine-learning.<br /></p></div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-12 col-lg-10 col-xl-12 offset-lg-1 offset-xl-0">
+                    <h3 class="text-center">References<br></h3><a href="#" name="1"></a><p>[1] Rod Austin; Is Predictive Analytics the Key to Surviving Traffic Surges and Downtime? <a href="https://pagely.com/blog/surviving-traffic-surges/">https://pagely.com/blog/surviving-traffic-surges/</a>; November 19th, 2018; Retrieved February 2nd, 2019<br /></p><a href="#" name="2"></a>
+                    <p>[2]&nbsp;Anshul Gandhi, Mor Harchol-Balter, Rajarshi Das, Charles Lefurgy; Optimal Power Allocation in Server Farms<br></p><a href="#" name="3"></a>
+                    <p>[3]&nbsp;Chenhao Qu, Rodrigo N. Calheiros, Rajkumar Buyya; Auto-Scaling Web Applications in Clouds: A Taxonomy and Survey<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Alim Ul Gias</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body><nav class="navbar navbar-light navbar-expand-md">
+    <div class="container-fluid"><a href="http://wp.doc.ic.ac.uk/gcasale/person/alim-ul-gias/" class="navbar-brand">Alim Ul Gias</a><button data-toggle="collapse" data-target="#navcol-2" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div
+            class="collapse navbar-collapse" id="navcol-2">
+            <ul class="nav navbar-nav">
+                <li role="presentation" class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li role="presentation" class="nav-item"><a href="Microservices.html" class="nav-link">Microservices</a></li>
+                <li role="presentation" class="nav-item"><a href="TrafficandResources.html" class="nav-link">Traffic Surges and Resource Allocation</a></li>
+                <li role="presentation" class="nav-item"><a href="CurrentShortcomings.html" class="nav-link">Current Shortcomings</a></li>
+                <li role="presentation" class="nav-item"><a href="QueueingTheory.html" class="nav-link">Queueing Theory</a></li>
+            </ul>
+    </div>
+        <a href="mailto: a.gias17@ic.ac.uk" class="navbar-brand">Email: a.gias17@ic.ac.uk</a>
+    </div>
+</nav>
+    <header class="masthead text-white text-center" style="background: url('assets/img/bg-masthead.jpg')no-repeat center center;background-size: cover;background-image: url(&quot;https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260&quot;);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5">Current Industry Shortcomings</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section style="margin-top: 100px;">
+        <div class="container" style="padding-bottom: 10%;">
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-8 col-lg-8 col-xl-10 offset-md-2 offset-lg-2 offset-xl-1">
+                    <h2 class="text-center">Traffic Surges In Action<br></h2>
+                    <p class="text-left">In certain cases, the way we allocate resources matters quite a lot, especially when dealing with traffic surges.<br>Let’s say you’re running Twitter during the World Cup and, from the above list, we’ll say we use a rules-based approach.<br>Most
+                        of the time, your machines are running normally, your resources usage is relatively low, although a higher than usual due to the sporting event. Indeed, you’re not using your full computing power unless needed, as directed by the
+                        finely crafted rules that keep your system in check.<br>Then England suddenly scores against Belgium!<br>You now have to deal with a massive influx of users that want to tweet about it: your resource usage is rapidly approaching
+                        its limit and&nbsp;you need to do something about it before your platform can’t handle&nbsp;the load anymore.<br>Worry not, the rule-based algorithm detected that you went past a usage threshold and will simply allocate more resources
+                        to the task so we can declare it “crisis averted”.<br></p>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-8 col-lg-8 col-xl-10 offset-md-2 offset-lg-2 offset-xl-1">
+                    <h2 class="text-center">But Is It Really?<br></h2><p class="text-left">Unfortunately, you notice that your system is still under huge traffic stress. In the same way as before, you simply allocate more resources. And then you do it again and again until you reach a reasonable overall resource usage.<br />So, what’s the catch?<br
+    />Obviously, allocating more resources isn’t an instantaneous task. Thus, by allocating in a step-by-step fashion, you may not always be able to respond to the traffic surges promptly enough <a href="#1">[1]</a><a href="#2">[2]</a>. You’re risking large-scale slowdown or a possible
+    shutdown of your whole service. Similarly, once the surge is over, returning to a nominal resource allocation will take time and will waste energy in the process <a href="#2">[2]</a>.</p></div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-8 col-lg-8 col-xl-10 offset-md-2 offset-lg-2 offset-xl-1">
+                    <h2 class="text-center">What About Machine Learning?<br></h2><p class="text-left">One of the alternatives to the rule-based algorithm is the machine learning approach. However, as previously stated, there are some<br />catches with this method as well.<br />First off, training a machine learning algorithm isn’t free, it is a heavy
+    process which could be slow for online resource management. In<br />light of this, using this method isn’t always a viable solution.<br />Secondly, machine learning techniques rely on analysing data sets to detect patterns. With this in mind, small
+    and/or recent businesses might not have enough traffic data available for the algorithm to “capture the underlying trend of the traffic surges” <a href="#3">[3]</a>, this is called underfitting <a href="#3">[3]</a><a href="#4">[4]</a>.</p></div>
+            </div>
+            <div class="row" style="padding-bottom: 30px;">
+                <div class="col-md-8 col-lg-8 col-xl-10 offset-md-2 offset-lg-2 offset-xl-1">
+                    <h2 class="text-center">What Can Be Done?</h2>
+                    <p class="text-left">No matter what choice we make regarding the way we distribute resources, each method has its ups and down and will require compromises. However, taking our options into account, the analytical modelling approach seems favourable using
+                        queuing theory could yield some noteworthy improvements.<br></p>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-12 col-lg-10 col-xl-12 offset-lg-1 offset-xl-0">
+                    <h3 class="text-center">References<br></h3><a href="#" name="1"></a>
+                    <p>[1] Lorido-Botran T, Miguel-Alonso J, Lozano JA. A review of auto-scaling techniques for elastic applications in cloud environments. Journal of grid computing. 2014 Dec 1;12(4):559-92.<br></p><a href="#" name="2"></a>
+                    <p>[2] Jiang J, Lu J, Zhang G, Long G. Optimal cloud resource auto-scaling for web applications. In Cluster, Cloud and Grid Computing (CCGrid), 2013 13th IEEE/ACM International Symposium on 2013 May 13 (pp. 58-65). IEEE.<br></p><a href="#"
+                        name="3"></a>
+                    <p>[3] Bilbao I, Bilbao J. Overfitting problem and the over-training in the era of data: Particularly for Artificial Neural Networks. In Intelligent Computing and Information Systems (ICICIS), 2017 Eighth International Conference on 2017
+                        Dec 5 (pp. 173-177). IEEE.<br></p><a href="#" name="4"></a>
+                    <p>[4] Everitt B.S., Skrondal A. (2010), Cambridge Dictionary of Statistics<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+</body>
+
+</html>
